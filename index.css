@@ -29,6 +29,7 @@ p{
 .container{
     display: flex;
     background-color: whitesmoke;
+    justify-content: space-between;
   
 }
 .item1{
@@ -37,7 +38,7 @@ p{
 }
 .item2{
    margin-left: 100px;
-   padding: 20px;
+   padding-top: 30px;
    background-color: whitesmoke;
 }
 .im{
@@ -55,11 +56,15 @@ h4{
     margin-left: 41%;
 }
 .images{
-    margin-left: 38%;
+    margin-left: 37%;
 }
+
 .footer{
-   position: absolute;
-   left: 26%;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
 }
 @media only screen and (max-width: 360px){
     body{
@@ -75,10 +80,23 @@ h4{
         margin-left: 30px;
     }
     h4{
-        margin-left: 34%;
+        margin-left: 36%;
     }
     .images{
         margin-left: 30%;
     }
    
+}
+
+
+@media only screen and (max-width: 784px){
+    body{
+        background-color: whitesmoke;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .item2{
+        margin-left: 30px;
+    }
 }
