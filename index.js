@@ -1,18 +1,13 @@
 let link = document.getElementById("lnk");
 let image = document.getElementById("bt");
-let btn1 = document.getElementById("btn");
-var IsDarkMode;
-
-btn1.addEventListener("click", () => {
-  link.href = "darkmode.css";
-  image.setAttribute("src", "image/sun.svg");
-  var IsDarkMode = true;
-});
-
-if (IsDarkMode == "true") {
-  btn1.addEventListener("click", () => {
+let button = document.getElementById("btn");
+button.addEventListener("click", () => {
+  if (link.href.includes("index")) {
+    link.href = "darkmode.css";
+    image.setAttribute("src", "image/sun(2).svg");
+    console.log("jcjcjhcxjdh");
+  } else {
     link.href = "index.css";
     image.setAttribute("src", "image/night.svg");
-    var IsDarkMode = false;
-  });
-}
+  }
+});
