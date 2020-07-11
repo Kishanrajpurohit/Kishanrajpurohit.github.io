@@ -5,7 +5,6 @@ button.addEventListener("click", () => {
   if (link.href.includes("index")) {
     link.href = "darkmode.css";
     image.setAttribute("src", "image/rsun.svg");
-    console.log("jcjcjhcxjdh");
   } else {
     link.href = "index.css";
     image.setAttribute("src", "image/night.svg");
